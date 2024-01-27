@@ -1,1 +1,23 @@
-Chateau.css
+body{background-color: dodgerblue;
+    color:white;
+    font-family: Arial, sans-serif;
+    body {
+        padding: 20px;
+    }
+    
+}
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: lightskyblue;
+      color:navy;
+      font-family: Georgia, 'Times New Roman', Times, serif
+    }
+    header{
+        background-color: dodgerblue;
+        color:snow;
+    }
+  }
+
+main{background-color:white ;
+    color: navy;
+}
