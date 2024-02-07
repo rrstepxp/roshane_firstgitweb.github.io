@@ -1,23 +1,54 @@
-body{background-color: dodgerblue;
-    color:white;
-    font-family: Arial, sans-serif;
-    body {
-        padding: 20px;
-    }
-    
+body {
+  background-color: dodgerblue;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
-  @media screen and (min-width: 600px) {
-    body {
-      background-color: lightskyblue;
-      color:navy;
-      font-family: Georgia, 'Times New Roman', Times, serif
-    }
-    header{
-        background-color: dodgerblue;
-        color:snow;
-    }
-  }
+main {
+  background-color: white;
+  color: navy;
+}
 
-main{background-color:white ;
-    color: navy;
+dt {
+  font-weight: bold;
+}
+
+header {
+  background-color: dodgerblue;
+  color: snow;
+  min-height: 100px;
+
+}
+
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 599px) {
+}
+header {
+  background-image: url(../images/LogoSmall.png);
+  min-height: 50px;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 600px) {
+body {
+      background-color: lightskyblue;
+      color: navy;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+}
+
+@media screen and (min-width: 599px) {
+  header {
+      background-image: url(../images/LogoLarge.png);
+      min-height: 100px;
+
+  }
 }
