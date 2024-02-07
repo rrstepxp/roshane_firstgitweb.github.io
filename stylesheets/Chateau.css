@@ -9,6 +9,11 @@ main {
   color: navy;
 }
 
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
 dt {
   font-weight: bold;
 }
@@ -52,3 +57,4 @@ body {
 
   }
 }
+
