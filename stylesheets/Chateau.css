@@ -1,5 +1,5 @@
 body {
-  background-color: dodgerblue;
+  background-color: #082626;
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -19,18 +19,47 @@ dt {
 }
 
 header {
-  background-color: dodgerblue;
   color: snow;
   min-height: 100px;
 
 }
 
+/* Navigation */
 
+nav {   
+  font-size:1.5em; 
+}
 
-.responsive {
+/* Navigation colors. The website https://colors-picker.com/hex-color-picker/ helped me. */
+
+nav a {
+  color: white; 
+  text-decoration: none; 
+}
+
+nav a:visited {
+  color: rgb(215, 111, 48); 
+}
+
+nav a:hover {
+  color: rgb(132, 0, 248); 
+}
+
+/* Page Title */
+
+#pagetitle {
+  font-family:"Brush Script MT", cursive;
+  font-size: 4em;
+}
+
+/* So the home page image stays responsive */
+
+.responsive { 
   width: 100%;
   height: auto;
 }
+
+/* This is were the page resizing and refiguring happens for the website. */
 
 @media screen and (max-width: 599px) {
 }
@@ -39,22 +68,101 @@ header {
   min-height: 50px;
   background-position: right top;
   background-repeat: no-repeat;
+  background-color: #D7BF98;
+  
 }
 
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 599px) {
 body {
-      background-color: lightskyblue;
-      color: navy;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #FAF0DC ;
+  color: navy;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
 
 @media screen and (min-width: 599px) {
-  header {
-      background-image: url(../images/LogoLarge.png);
-      min-height: 100px;
-
+header {
+  background-image: url(../images/LogoLarge.png);
+  min-height: 100px;
+  background-color:#082626;
+ 
   }
 }
 
+/* These are the background colors for the classes page. */
+
+.asideforclasses {
+  background-color: #f79b92;
+}
+
+.activities {
+  background-color: #F1B552;
+
+}
+
+.prizes {
+  background-color: #8EB8A3;
+}
+
+/* This is the ourteam page. This is where the images of the team members and captions are maintained. */
+
+.ouremployees {
+  font-weight:bold;
+}
+
+.headshots  {
+  max-width:100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.headshots figure{
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.headshots img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+
+}
+
+.headshots figcaption {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+
+}
+
+.bigitalics {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.ouremployees {
+  background-color: #f5ce91;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .headshots figure {
+    width:150px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .headshots figure {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .headshots figcaption {
+      font-weight: bold;
+      font-size: 11px;
+      margin-top: 5px;
+  }
+}
