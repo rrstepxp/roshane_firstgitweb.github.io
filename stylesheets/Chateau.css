@@ -1,22 +1,33 @@
+/* Body styles */
+
 body {
   background-color: #082626;
-  color: white;
+  color: #FAF0DC ;
   font-family: Arial, sans-serif;
   padding: 20px;
 }
+
+/*Main styles */
+
 main {
-  background-color: white;
-  color: navy;
+  background-color: #ffffff ;
+  color:#111c13;
 }
+
+/* Full-width image styles */
 
 .full-width {
   width: 100%;
   height: auto;
 }
 
+/*Definition term styles */
+
 dt {
   font-weight: bold;
 }
+
+/* Header styles */
 
 header {
   color: snow;
@@ -24,10 +35,58 @@ header {
 
 }
 
-/* Navigation */
-
+/* Navigation Styles*/
 nav {   
   font-size:1.5em; 
+
+}
+
+/* Center the titles in the aside, activities, and prizes sections */
+
+.asideforclasses h2,
+.activities h2,
+.prizes h2 {
+  text-align: center;
+}
+
+
+/* Vertical Navigation LARGE SCREENS */
+
+@media screen and (min-width: 599px) {
+nav ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+ 
+  }
+
+nav li {
+  display: block;
+  width: 120px;
+  background-color: #3b7852;
+  text-align: center;
+  }
+}
+
+/* Vertical Navigation SMALL SCREENS */
+
+@media screen and (max-width: 599px) {
+
+nav ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px;
+  }
+
+nav li {
+  display: inline;
+  }
+
+nav li a {
+  color: #111c13;
+  text-decoration: none;
+  font-size: 18px;
+  }
 }
 
 /* Navigation colors. The website https://colors-picker.com/hex-color-picker/ helped me. */
@@ -35,10 +94,11 @@ nav {
 nav a {
   color: white; 
   text-decoration: none; 
+ 
 }
 
 nav a:visited {
-  color: rgb(215, 111, 48); 
+  color: rgb(245, 124, 25); 
 }
 
 nav a:hover {
@@ -59,7 +119,7 @@ nav a:hover {
   height: auto;
 }
 
-/* This is were the page resizing and refiguring happens for the website. */
+/* Header background and image styles */
 
 @media screen and (max-width: 599px) {
 }
@@ -68,15 +128,16 @@ header {
   min-height: 50px;
   background-position: right top;
   background-repeat: no-repeat;
-  background-color: #D7BF98;
+  background-color: #82745c;
   
 }
 
 @media screen and (min-width: 599px) {
 body {
   background-color: #FAF0DC ;
-  color: navy;
+  color:#111c13;
   font-family: Georgia, 'Times New Roman', Times, serif;
+ 
   }
 }
 
@@ -89,25 +150,68 @@ header {
   }
 }
 
+@media screen and (max-width: 599px) {
+.asideforclasses left {
+  border-radius: 10px;
+  border: 2px solid #000000;
+  padding: 10px;
+  
+  }
+}
+
+/* Three Columns for Large Screen. I have three columns instead of two. Used the Flex method. */
+
+.container {
+  display: flex;
+}
+
+.asideforclasses, .activities, .prizes {
+  width: 33.33%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* So the Small Screen columns stay vertical */
+
+@media screen and (max-width: 599px) {
+  .container {
+      flex-direction: column; 
+  }
+
+  .asideforclasses, .activities, .prizes {
+      width: auto; 
+  }
+}
+
 /* These are the background colors for the classes page. */
 
 .asideforclasses {
-  background-color: #f79b92;
+  background-color: #d0eddb;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  padding: 20px;
 }
 
 .activities {
   background-color: #F1B552;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  padding: 20px;
 
 }
 
 .prizes {
   background-color: #8EB8A3;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  padding: 20px;
 }
 
-/* This is the ourteam page. This is where the images of the team members and captions are maintained. */
+/* This is the ourteam page. This is where the images of the team members, size and captions are maintained. */
 
 .ouremployees {
   font-weight:bold;
+  color:#111c13;
 }
 
 .headshots  {
@@ -134,6 +238,7 @@ header {
   font-weight: bold;
   font-size: 14px;
   margin-top: 5px;
+  color: #111c13;
 
 }
 
@@ -164,5 +269,13 @@ header {
       font-weight: bold;
       font-size: 11px;
       margin-top: 5px;
+      color: #111c13;
   }
+}
+
+/* Footer styles */
+
+footer {
+  clear: both;
+  text-align: center;
 }
