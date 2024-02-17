@@ -10,8 +10,8 @@ body {
 /*Main styles */
 
 main {
-  background-color: #ffffff ;
-  color:#111c13;
+  background-color: #ffffff;
+  color: #111c13;
 }
 
 /* Full-width image styles */
@@ -36,10 +36,11 @@ header {
 }
 
 /* Navigation Styles*/
-nav {   
-  font-size:1.5em; 
 
+nav {
+  font-size: 1.5em;
 }
+
 
 /* Center the titles in the aside, activities, and prizes sections */
 
@@ -47,6 +48,32 @@ nav {
 .activities h2,
 .prizes h2 {
   text-align: center;
+}
+
+/* Navigation Styles for large screens */
+
+@media screen and (min-width: 599px) {
+  nav {
+    font-size: 1.5em;
+    float: left; 
+    width: 130px; 
+    background-color: #FAF0DC; 
+    padding: 30px;
+  }
+
+  /*Main styles */
+  main {
+    background-color: #ffffff;
+    color: #111c13;
+    margin-left: 210px;
+    padding: 20px; 
+  }
+
+  .asideforclasses,
+  .ouremployees {
+    float: right; 
+    width: calc(100% - 250px); 
+  }
 }
 
 
@@ -63,7 +90,7 @@ nav ul {
 nav li {
   display: block;
   width: 120px;
-  background-color: #3b7852;
+  background-color: #082626;;
   text-align: center;
   }
 }
@@ -119,7 +146,8 @@ nav a:hover {
   height: auto;
 }
 
-/* Header background and image styles */
+
+/* Header background and Image styles */
 
 @media screen and (max-width: 599px) {
 }
@@ -137,8 +165,17 @@ body {
   background-color: #FAF0DC ;
   color:#111c13;
   font-family: Georgia, 'Times New Roman', Times, serif;
- 
+
   }
+
+  /* Controls the image for Classes */
+
+  .responsive2 {
+    width: calc(100% - 211px);
+    height: auto;
+    padding-left: 20px;
+
+    }
 }
 
 @media screen and (min-width: 599px) {
@@ -159,16 +196,17 @@ header {
   }
 }
 
-/* Three Columns for Large Screen. I have three columns instead of two. Used the Flex method. */
+/* I have 3 Boxes instead of 2 for my Classes page. I used the Flex method. */
 
 .container {
   display: flex;
 }
 
 .asideforclasses, .activities, .prizes {
-  width: 33.33%;
-  padding: 20px;
+  width: 34%;
+  padding: 10px;
   box-sizing: border-box;
+  margin: 5px;
 }
 
 /* So the Small Screen columns stay vertical */
@@ -183,7 +221,7 @@ header {
   }
 }
 
-/* These are the background colors for the classes page. */
+/* These are the background colors for the Classes page. */
 
 .asideforclasses {
   background-color: #d0eddb;
@@ -207,11 +245,17 @@ header {
   padding: 20px;
 }
 
-/* This is the ourteam page. This is where the images of the team members, size and captions are maintained. */
+/* This is the Our Team page. This is where the images of the team members, size and captions are maintained. */
 
 .ouremployees {
   font-weight:bold;
   color:#111c13;
+  background-color: #f5ce91;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
 }
 
 .headshots  {
@@ -247,11 +291,6 @@ header {
   font-style: italic;
 }
 
-.ouremployees {
-  background-color: #f5ce91;
-  border-radius: 10px;
-}
-
 @media screen and (min-width: 600px) {
   .headshots figure {
     width:150px;
@@ -278,4 +317,5 @@ header {
 footer {
   clear: both;
   text-align: center;
+  margin-top: 20px;
 }
