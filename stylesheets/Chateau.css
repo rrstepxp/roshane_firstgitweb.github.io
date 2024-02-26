@@ -70,10 +70,6 @@ nav {
     padding: 20px; 
   }
 
-
-  .wrapper {
-    display: flexbox;
-  }
 }
 
   .asideforclasses,
@@ -102,11 +98,12 @@ nav {
   .navcontainer {
     display: flex;
     flex-direction: column; 
+    height: 100vh;
   }
 
   .main {
-    overflow: hidden;
-    flex: 1;
+    overflow: scroll;
+    height: 100vh;
   }
 }
 
@@ -125,6 +122,12 @@ nav {
   .navcontainer {
     font-size: 18px;
   }
+
+
+.ouremployees {
+  width: 400px;
+}
+
 }
 
 
