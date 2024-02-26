@@ -21,7 +21,7 @@ main {
   height: auto;
 }
 
-/*Definition term styles */
+/* Definition term styles */
 
 dt {
   font-weight: bold;
@@ -34,6 +34,7 @@ header {
   min-height: 100px;
 
 }
+
 
 /* Navigation Styles*/
 
@@ -69,52 +70,64 @@ nav {
     padding: 20px; 
   }
 
+
+  .wrapper {
+    display: flexbox;
+  }
+}
+
   .asideforclasses,
   .ouremployees {
     float: right; 
     width: calc(100% - 250px); 
-  }
+
 }
 
+
+/* Navigation Container rules */
+
+.navcontainer a {
+  width: 120px;
+  margin: 5px;
+  padding: 0px;
+  background-color: #082626;
+  text-align: center;
+  display: block;
+
+}
 
 /* Vertical Navigation LARGE SCREENS */
 
 @media screen and (min-width: 599px) {
-nav ul {
-  list-style-type: none;
-  margin: 5px;
-  padding: 0px;
- 
+  .navcontainer {
+    display: flex;
+    flex-direction: column; 
   }
 
-nav li {
-  display: block;
-  width: 120px;
-  background-color: #082626;;
-  text-align: center;
+  .main {
+    overflow: hidden;
+    flex: 1;
   }
 }
+
 
 /* Vertical Navigation SMALL SCREENS */
 
 @media screen and (max-width: 599px) {
 
-nav ul {
-  list-style-type: none;
-  margin: 5px;
-  padding: 0px;
+  .navcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-nav li {
-  display: inline;
-  }
-
-nav li a {
-  color: #111c13;
-  text-decoration: none;
-  font-size: 18px;
+  /* Makes font smaller so the "Our Team" is next to each other. */
+  .navcontainer {
+    font-size: 18px;
   }
 }
+
+
 
 /* Navigation colors. The website https://colors-picker.com/hex-color-picker/ helped me. */
 
@@ -144,6 +157,14 @@ nav a:hover {
 .responsive { 
   width: 100%;
   height: auto;
+}
+
+/* Code for the Flexbox */
+
+.array-of-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
 
@@ -255,7 +276,23 @@ header {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  
+  text-align: center;
+}
+
+.ouremployees h2 {
+  margin-top: 20px;
+}
+
+.ouremployees ol {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  display: inline-block; 
+  text-align: left; 
+}
+
+.ouremployees ol li {
+  margin-bottom: 10px; /* Add space between list items */
 }
 
 .headshots  {
@@ -311,6 +348,21 @@ header {
       color: #111c13;
   }
 }
+
+/* CSS to remove underlines from anchor elements */
+
+a {
+  text-decoration: none; 
+}
+
+/* So the spongsers are center. */
+
+.oursponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
 
 /* Footer styles */
 

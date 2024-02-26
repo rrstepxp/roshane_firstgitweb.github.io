@@ -7,26 +7,35 @@
     <title>Chateau Chien</title>  <!--Page Title-->
 </head>
 <body>
+       <!--Header section-->
     <header>
         <h1 id="pagetitle" class="mainheader">Chateau Chien</h1> <!--Website Title-->
-        <!--Navigation section-->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li> &nbsp;&nbsp;&nbsp;
-                <li><a href="classes.html">Classes</a></li> &nbsp;&nbsp;&nbsp;
-                <li><a href="ourteam.html">Our Team</a></li> &nbsp;&nbsp;&nbsp;
-                <li><a href="contact.html">Contact</a></li> &nbsp;&nbsp;&nbsp;
-            </ul>
-        </nav> 
     </header>
+        <!--Navigation section-->
+    <div class="wrapper">
+        <nav class="navcontainer">
+            <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;
+            <a href="classes.html">Classes</a> &nbsp;&nbsp;&nbsp;
+            <a href="ourteam.html">Our Team</a> &nbsp;&nbsp;&nbsp;
+            <a href="contact.html">Contact</a> &nbsp;&nbsp;&nbsp;
+        </nav> 
     <main> 
-        <a href="https://dog.rescueme.org/"> <img src="images/sponsor.jpg" alt="Sponser Image" width="300" height="300"> </a>
-        <!--Paragraph Header and Adresss Section-->
+         <!--Sponsor Section-->
+        <section class="oursponsors">
+        <a href="https://dog.rescueme.org/"> <img src="images/sponsor.jpg" alt="Sponser Image" width="100"> </a>
+        <a href="https://www.petsmart.com/"> <img src="images/petsmartlogo.jpg" alt="Petsmart Image" width="100"> </a>
+        <a href="https://www.petco.com/shop/en/petcostore"> <img src="images/petcologo.jpg" alt="Petco Image" width="100"> </a>
+        <a href="https://www.nationalgeographic.com/"> <img src="images/natgeologo.jpg" alt="Natgeo Image" width="100"> </a>
+        </section>
     </main>
+    </div>
+
+
     <!--The section talks about the trainers and their qualifications.-->
     
     <section class="ouremployees">
-        <h2>Our trainers are...</h2>
+
+        <h2>Why Our Trainers?</h2>
         <ol>
             <li>Experienced</li>
             <li>Helpful</li>
@@ -35,7 +44,13 @@
             <li>Competent</li>
         </ol>
         <h2>Meet the Team</h2>
+        
+
+    <!--This is to creat the flexbox.-->
+
+    <div class="array-of-images">
         <div class="headshots">
+
             <figure>
                 <img src="images/newtrainer1.jpeg" alt="Photo of Dona Montenello with Phd in Canine Studies from Burklee University."> 
                 <figcaption>Dr. Dona Montenello<wbr>Phd in Canine Studies<wbr>Burklee University</figcaption>
@@ -45,15 +60,36 @@
                 <figcaption>Vladimir Vickersonbell<wbr>MS in Zoology<wbr>University of Birmington</figcaption>
             </figure>
             <figure>
-                <img src="images/newtrainer3.jpeg" alt="Photo of Rebecca White with Phd in Dog Philosophy from Burnt Ubmer College">
+                <img src="images/newtrainer3.jpeg" alt="Photo of Dr. Rebecca White with Phd in Dog Philosophy from Burnt Ubmer College">
                 <figcaption>Dr. Rebecca White<wbr>Phd in Dog Philosophy<wbr>Burnt Umber College</figcaption>
             </figure>
             <figure>
                 <img src="images/newtrainer4.jpeg" alt="Photo Janet Jackson from MA in Canine Arts from Northsouthern Americas University">
-                <figcaption>Janet Jackson<wbr>MA in Canine Sports & Arts<wbr>Northsouthern Americas<wbr>University</figcaption>
+                <figcaption>Janet Jackson<wbr>MA in Canine Activity<wbr>Southern Lands<wbr>University</figcaption>
             </figure>
+            <figure>
+                <img src="images/newtrainer5.jpeg" alt="Photo of Lauren B. Redd with MS in Canine Studies from Burklee UNiversitiy.">
+                <figcaption>Lauren B. Redd<wbr>MS in Canine Studies<wbr>Burklee University</figcaption>
+            </figure>
+            <figure>
+                <img src="images/newtrainer6.jpeg" alt="Photo of Dr. Elaine Hussenbrick with a Phd in Pet Diversity from West Portland Seattle University.">                
+                <figcaption>Elain Hussenbrick<wbr>Phd in Pet Diversity<wbr>West Portland<wbr>Seattle University</figcaption>
+            </figure>
+            <figure>
+                <img src="images/newtrainer7.jpeg" alt="Photo of Dr. Richard Roundtree with a Phd in Canine Parapsychology and Telepathy from Hartford Oxfort Kings College.">
+                <figcaption>Richard Roundtree<wbr>Phd in Canine<wbr>Parapsychology<wbr>Oxfort College</figcaption>
+            </figure>
+            <figure>
+                <img src="images/newtrainer8.jpeg" alt="Photo of Intern Liam Neesems with a BS in Computer Science from Northeastern University."> 
+                <figcaption>Intern Liam Neesems<wbr>BS in Computer Science<wbr>Northeastern University</figcaption>
+            </figure>
+            <figure>
+                <img src="images/newtrainer9.jpeg" alt="Photo of Intern Madelyn Hound with a BA in Art Studies from Princetown University.">
+                <figcaption>Intern Madelyn Hound<wbr>BA in Art Studies<wbr>Princetown University</figcaption>
+            </figure>
+
+        </div>
     </div>
-    
 
     </section>
     <footer>Copyright &copy; 2023 <span class=bigitalics>Chateau Chien</span><br><a href="mailto:roshane@stephenson.com">Send email</a></footer> <!--Footer section-->
