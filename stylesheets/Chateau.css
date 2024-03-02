@@ -131,7 +131,6 @@ nav {
 }
 
 
-
 /* Navigation colors. The website https://colors-picker.com/hex-color-picker/ helped me. */
 
 nav a {
@@ -294,8 +293,10 @@ header {
   text-align: left; 
 }
 
+/* Add space between list items */
+
 .ouremployees ol li {
-  margin-bottom: 10px; /* Add space between list items */
+  margin-bottom: 10px; 
 }
 
 .headshots  {
@@ -358,7 +359,7 @@ a {
   text-decoration: none; 
 }
 
-/* So the spongsers are center. */
+/* So the sponsers are center. */
 
 .oursponsors {
   display: flex;
