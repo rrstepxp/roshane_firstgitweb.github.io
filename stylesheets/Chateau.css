@@ -361,7 +361,8 @@ a {
   justify-content: center; 
 }
 
-/* Dog Graduates GRID section. */
+/* Dog Graduates GRID section for Large Screen. */
+
 
 @media screen and (min-width: 600px){
 
@@ -421,6 +422,8 @@ a {
   }
 
 }
+
+/* Dog Graduates GRID section for Small Screen. */
 
 @media screen and (max-width: 599px) {
 
