@@ -7,7 +7,7 @@ body {
   padding: 20px;
 }
 
-/*Main styles */
+/* Main styles */
 
 main {
   background-color: #ffffff;
@@ -27,6 +27,8 @@ dt {
   font-weight: bold;
 }
 
+/* HEADER SECTION */
+
 /* Header styles */
 
 header {
@@ -35,111 +37,24 @@ header {
 
 }
 
-/* Navigation Styles*/
+/* Header background and image styles */
 
-nav {
-  font-size: 1.5em;
+header {
+  background-image: url(../images/LogoSmall.png);
+  min-height: 50px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #82745c;
+  
 }
-
-/* Center the titles in the aside, activitises, and prizes sections */
-
-.asideforclasses h2,
-.activities h2,
-.prizes h2 {
-  text-align: center;
-}
-
-/* Navigation Styles for large screens */
 
 @media screen and (min-width: 599px) {
-
-  nav {
-    font-size: 1.25em;
-    float: left; 
-    width: 130px; 
-    background-color: #FAF0DC; 
-    padding: 30px;
-  }
-
-  /*Main styles */
-  main {
-    background-color: #ffffff;
-    color: #111c13;
-    margin-left: 210px;
-    padding: 20px; 
-  }
-
-}
-
-  .asideforclasses,
-  .ouremployees {
-    float: right; 
-    width: calc(100% - 250px); 
-
-}
-
-/* Navigation Container rules */
-
-.navcontainer a {
-  width: 150px;
-  margin: 5px;
-  padding: 0px;
-  background-color: #082626;
-  text-align: center;
-  display: block;
-
-}
-
-/* Vertical Navigation LARGE SCREENS */
-
-@media screen and (min-width: 599px) {
-  .navcontainer {
-    display: flex;
-    flex-direction: column; 
-    height: 100vh;
-  }
-
-  .main {
-    overflow: scroll;
-    height: 100vh;
-  }
-}
-
-/* Vertical Navigation SMALL SCREENS */
-
-@media screen and (max-width: 599px) {
-
-  .navcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  /* Makes font smaller so the "Our Team" is next to each other. */
-  .navcontainer {
-    font-size: 18px;
-  }
-
-.ouremployees {
-  width: 400px;
-}
-
-}
-
-/* Navigation colors. The website https://colors-picker.com/hex-color-picker/ helped me. */
-
-nav a {
-  color: white; 
-  text-decoration: none; 
+header {
+  background-image: url(../images/LogoLarge.png);
+  min-height: 100px;
+  background-color:#082626;
  
-}
-
-nav a:visited {
-  color: rgb(245, 124, 25); 
-}
-
-nav a:hover {
-  color: rgb(132, 0, 248); 
+  }
 }
 
 /* Page Title */
@@ -164,78 +79,120 @@ nav a:hover {
   justify-content: center; 
 }
 
-/* Header background and Image styles */
+/* CSS to remove underlines from anchor elements */
 
-@media screen and (max-width: 599px) {
+a {
+  text-decoration: none; 
 }
-header {
-  background-image: url(../images/LogoSmall.png);
-  min-height: 50px;
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-color: #82745c;
-  
+
+/* NAVIGATION SECTION */
+
+nav {
+  font-size: 1.5em;
 }
+
+/* Navigation styles for Large Screens */
 
 @media screen and (min-width: 599px) {
-body {
-  background-color: #FAF0DC ;
-  color:#111c13;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 
+  nav {
+    font-size: 1.25em;
+    float: left; 
+    width: 130px; 
+    background-color: #FAF0DC; 
+    padding: 30px;
   }
 
-  /* Controls the image for Classes */
-
-  .responsive2 {
-    width: calc(100% - 211px);
-    height: auto;
-    padding-left: 20px;
-
-    }
-}
-
-@media screen and (min-width: 599px) {
-header {
-  background-image: url(../images/LogoLarge.png);
-  min-height: 100px;
-  background-color:#082626;
- 
+  /* Main styles */
+  main {
+    background-color: #ffffff;
+    color: #111c13;
+    margin-left: 210px;
+    padding: 20px; 
   }
+
 }
 
-@media screen and (max-width: 599px) {
-.asideforclasses left {
-  border-radius: 10px;
-  border: 2px solid #000000;
-  padding: 10px;
-  
-  }
-}
+/* Navigation container rules */
 
-/* I have 3 Boxes instead of 2 for my Classes page. I used the Flex method. */
-
-.container {
-  display: flex;
-}
-
-.asideforclasses, .activities, .prizes {
-  width: 34%;
-  padding: 10px;
-  box-sizing: border-box;
+.navcontainer a {
+  width: 150px;
   margin: 5px;
+  padding: 0px;
+  background-color: #082626;
+  text-align: center;
+  display: block;
+
 }
 
-/* So the Small Screen columns stay vertical */
+/* Vertical navigation bar for Large Screens */
 
-@media screen and (max-width: 599px) {
-  .container {
-      flex-direction: column; 
+@media screen and (min-width: 599px) {
+  .navcontainer {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
   }
 
-  .asideforclasses, .activities, .prizes {
-      width: auto; 
+.main {
+    overflow: scroll;
+    height: 100vh;
   }
+
+body {
+      background-color: #FAF0DC ;
+      color:#111c13;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+
+}
+
+/* Navigation colors. The website https://colors-picker.com/hex-color-picker/ helped me. */
+
+nav a {
+  color: white; 
+  text-decoration: none; 
+ 
+}
+
+nav a:visited {
+  color: rgb(245, 124, 25); 
+}
+
+nav a:hover {
+  color: rgb(132, 0, 248); 
+}
+
+
+/* CLASSES SECTION */
+
+/* Center the titles in the aside, activitises, and prizes for Classes Section */
+
+.asideforclasses h2,
+.activities h2,
+.prizes h2 {
+  text-align: center;
+}
+
+/* Positions the Classes Section */
+
+  .asideforclasses,
+  .ouremployees {
+    float: right; 
+    width: calc(100% - 250px); 
+
+  }
+
+/* Controls the image for Classes Section */
+ 
+@media screen and (min-width: 599px) {
+.responsive2 {
+  width: calc(100% - 211px);
+  height: auto;
+  padding-left: 20px;
+    
+ }
 }
 
 /* These are the background colors for the Classes page. */
@@ -261,6 +218,21 @@ header {
   border: 2px solid #000000;
   padding: 20px;
 }
+
+/* I have 3 Boxes instead of 2 for my Classes page. I used the 'flex' method. */
+
+.container {
+  display: flex;
+}
+
+.asideforclasses, .activities, .prizes {
+  width: 34%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+/* OUR TEAM SECTION */
 
 /* This is the Our Team page. This is where the images of the team members, size and captions are maintained. */
 
@@ -326,32 +298,12 @@ header {
   font-style: italic;
 }
 
-@media screen and (min-width: 600px) {
   .headshots figure {
     width:150px;
   }
-}
 
-@media screen and (max-width: 599px) {
-  .headshots figure {
-    width: 80px;
-  }
-}
 
-@media screen and (max-width: 599px) {
-  .headshots figcaption {
-      font-weight: bold;
-      font-size: 11px;
-      margin-top: 5px;
-      color: #111c13;
-  }
-}
-
-/* CSS to remove underlines from anchor elements */
-
-a {
-  text-decoration: none; 
-}
+/* SPONSERS SECTION */
 
 /* So the sponsers are center. */
 
@@ -361,10 +313,9 @@ a {
   justify-content: center; 
 }
 
-/* Dog Graduates GRID section for Large Screen. */
+/* OUR GRADUATES SECTION */
 
-
-@media screen and (min-width: 600px){
+/* Dog Graduates GRID section. */
 
   .grid-container {
     display: grid;
@@ -421,9 +372,67 @@ a {
     grid-area: 4 / 4 / 4 / 4;
   }
 
+/* FOOTER SECTION */
+
+/* Footer styles */
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Dog Graduates GRID section for Small Screen. */
+/* -------SMALL SCREEN SECTION-------- */
+
+/* Vertical navigation bar for Small Screens */
+
+@media screen and (max-width: 599px) {
+
+  .navcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+/* Makes font smaller so the "Our Team" is next to each other. */
+
+  .navcontainer {
+    font-size: 18px;
+  }
+
+
+/* Our employees width */
+
+.ouremployees {
+  width: 400px;
+}
+
+}
+
+/* Classes section for Small Screens */
+
+@media screen and (max-width: 599px) {
+.asideforclasses left {
+  border-radius: 10px;
+  border: 2px solid #000000;
+  padding: 10px;
+  
+  }
+}
+
+/* So the Small Screen columns stay vertical */
+
+@media screen and (max-width: 599px) {
+  .container {
+      flex-direction: column; 
+  }
+
+  .asideforclasses, .activities, .prizes {
+      width: auto; 
+  }
+}
+
+/* Gridbox for Small Screen */
 
 @media screen and (max-width: 599px) {
 
@@ -484,10 +493,21 @@ a {
 
 }
 
-/* Footer styles */
+/* Our Team headshots for Small Screens */
 
-footer {
-  clear: both;
-  text-align: center;
-  margin-top: 20px;
+@media screen and (max-width: 599px) {
+  .headshots figure {
+    width: 80px;
+  }
 }
+
+@media screen and (max-width: 599px) {
+  .headshots figcaption {
+      font-weight: bold;
+      font-size: 11px;
+      margin-top: 5px;
+      color: #111c13;
+  }
+}
+
+/* -------SMALL SCREEN SECTION ENDS!-------- */
