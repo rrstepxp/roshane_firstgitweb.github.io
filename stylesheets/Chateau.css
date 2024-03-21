@@ -14,6 +14,7 @@ main {
   color: #111c13;
 }
 
+
 /* Full-width image styles */
 
 .full-width {
@@ -87,10 +88,6 @@ a {
 
 /* NAVIGATION SECTION */
 
-nav {
-  font-size: 1.5em;
-}
-
 /* Navigation styles for Large Screens */
 
 @media screen and (min-width: 599px) {
@@ -103,13 +100,13 @@ nav {
     padding: 30px;
   }
 
-  /* Main styles */
-  main {
-    background-color: #ffffff;
-    color: #111c13;
-    margin-left: 210px;
-    padding: 20px; 
-  }
+    /* Main styles */
+    main {
+      background-color: #ffffff;
+      color: #111c13;
+      margin-left: 210px;
+      padding: 20px; 
+    }
 
 }
 
