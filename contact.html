@@ -8,11 +8,9 @@
 </head>
 <body>
        <!--Header section-->
-
     <header>
         <h1 id="pagetitle" class="mainheader">Chateau Chien</h1> <!--Website Title-->
     </header>
-    
      <!--Navigation section-->
   
      <nav class="navcontainer">
@@ -23,10 +21,44 @@
         <a href="ourgraduates.html">Our Graduates</a>&nbsp;&nbsp;&nbsp;
         <a href="ourtestimonies.html">Testimonies</a>&nbsp;&nbsp;&nbsp;
     </nav> 
-       
+
+    <!--Paragraph Header and Adresss Section-->
+
     <main> 
+
+    <!--Header for contact-->
+
+        <h1 id="formheader" class="contactheader"> We want to hear from you!</h1>
+
+   <!--Dog on phone image-->
+
         <img src="images/DogOnPhone.jpg" alt="Dog on Phone Image"  width="300">
-        <!--Paragraph Header and Adresss Section-->
+
+    <!--Form-->
+
+        <form class="form-inline" action="https://webdevbasics.net/scripts/demo.php" method="post">
+            <label for="fname">First Name:</label><br><br>
+            <input type="text" id="fname" name="first name" placeholder="John" required><br><br>
+            <label for="lname">Last Name:</label><br><br>
+            <input type="text" id="lname" name="last name" placeholder="Doe" required><br><br>
+            <label for="email">Your Email:</label><br><br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+            <label for="phone">Enter a phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+            <label for="pfcontact">Preferred Contact:</label>
+            <select name="preferred contact" id="pfcontact">
+              <option value="email me">Email me</option>
+              <option value="morning">Phone me between 9am – 11am</option>
+              <option value="afternoon">Phone me between 1pm – 4pm</option>
+              <option value="evening">Phone me between 6pm – 9pm</option>
+            </select>
+            <br><br>
+            <p><label for="questions">Questions or Concerns?</label></p>
+            <textarea id="questions" name="questions" rows="4" cols="50">Type here.</textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </form>
     </main>
 
     <!--Footer section-->

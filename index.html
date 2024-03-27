@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"> <!--Meta tag for character set-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Meta teg for view point-->
-    <link rel="stylesheet" href="stylesheets/Chateau.css"> <!--Link to external stylesheet-->
-    <title>Chateau Chien</title>  <!--Page Title-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/Chateau.css">
+    <title>Chateau Chien</title>
 </head>
-<body>
-
-    <!--Header section-->
+<body onload="welcomeMessage()"> <!-- Call welcomeMessage() function when the page loads -->
 
     <header>
         <h1 id="pagetitle" class="mainheader">Chateau Chien</h1>
     </header>
     
-     <!--Navigation section-->
-  
-            <nav class="navcontainer">
-            <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;
-            <a href="classes.html">Classes</a> &nbsp;&nbsp;&nbsp;
-            <a href="ourteam.html">Our Team</a> &nbsp;&nbsp;&nbsp;
-            <a href="contact.html">Contact</a> &nbsp;&nbsp;&nbsp;
-            <a href="ourgraduates.html">Our Graduates</a>&nbsp;&nbsp;&nbsp;
-            <a href="ourtestimonies.html">Testimonies</a>&nbsp;&nbsp;&nbsp;
-        </nav> 
-       
-    <!--This is the main page section for the Chateau Chien introduction-->
+    <nav class="navcontainer">
+        <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;
+        <a href="classes.html">Classes</a> &nbsp;&nbsp;&nbsp;
+        <a href="ourteam.html">Our Team</a> &nbsp;&nbsp;&nbsp;
+        <a href="contact.html">Contact</a> &nbsp;&nbsp;&nbsp;
+        <a href="ourgraduates.html">Our Graduates</a>&nbsp;&nbsp;&nbsp;
+        <a href="ourtestimonies.html">Testimonies</a>&nbsp;&nbsp;&nbsp;
+    </nav> 
 
     <main>
-
         <img src="images/homePageImage.jpg" alt="Home Page Image" class="responsive">
         <h2>Good Doggie!</h2>
-        <p><span class=bigitalics>Chateau Chien</span> welcomes all of our furry friends to bring your person and train them to keep you happy. Whether you are just a pup getting to know your new family, a young dog learning your first tricks, or a more mature dog who needs an etiquette refresher, we have a class for you.</p>
+        <p><span class="bigitalics">Chateau Chien</span> welcomes all of our furry friends to bring your person and train them to keep you happy. Whether you are just a pup getting to know your new family, a young dog learning your first tricks, or a more mature dog who needs an etiquette refresher, we have a class for you.</p>
         <p>Our trainers offer group classes where syou can make some new friends and watch them train their people while you train yours. We also have private sessions if you are a bit shy or need something special.</p>
-        <h4><span class=bigitalics>Chateau Chien</span></h4> 
+        <h4><span class="bigitalics">Chateau Chien</span></h4> 
         <p>612 Fido Trail<br>Laika, CA 96162</p>
         <p>888-555-5555</p>
-        
     </main>
 
-    <!--Footer section-->
+    <footer>
+        Copyright &copy; 2023 <span class="bigitalics">Chateau Chien</span><br>
+        <a href="mailto:roshane@stephenson.com">Send email</a>
+    </footer>
 
-    <footer>Copyright &copy; 2023 <span class=bigitalics>Chateau Chien</span><br><a href="mailto:roshane@stephenson.com">Send email</a></footer>
+    <!-- Script tag to include your JavaScript file -->
+    <script src="scripts/alert.js"></script>
 
 </body>
 </html>
-

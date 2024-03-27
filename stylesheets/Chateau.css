@@ -58,6 +58,14 @@ header {
   }
 }
 
+/* Contact header section */
+
+#formheader {
+  text-align: center;
+
+}
+
+
 /* Page Title */
 
 #pagetitle {
@@ -369,6 +377,47 @@ nav a:hover {
     grid-area: 4 / 4 / 4 / 4;
   }
 
+  /* FORM SECTION */
+
+  /* Style the form container */
+.form-inline {
+  background-color: #c7e9ee; /* Change the background color for the entire form */
+}
+
+  /* Style the form - display items horizontally */
+  
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  white-space: nowrap; /* Ensure label text stays on the same line */
+}
+
+/* Style the phone number label */
+.form-inline label[for="phone"] {
+  margin-right: 10px; /* Adjust margin for better alignment */
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 0; /* Adjust margin to ensure input fields are closer */
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: rgb(26, 43, 15);
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: rgb(223, 133, 73);
+}
+
+
 /* FOOTER SECTION */
 
 /* Footer styles */
@@ -402,6 +451,21 @@ footer {
 
 .ouremployees {
   width: 400px;
+}
+
+/* SMALL SCREEN FORM */
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 599px wide */
+
+@media (max-width: 599px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 }
