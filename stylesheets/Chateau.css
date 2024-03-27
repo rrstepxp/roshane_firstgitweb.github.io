@@ -377,7 +377,7 @@ nav a:hover {
     grid-area: 4 / 4 / 4 / 4;
   }
 
-  /* FORM SECTION */
+  /* Large Screen Form Section  */
 
   /* Style the form container */
 .form-inline {
@@ -453,7 +453,7 @@ footer {
   width: 400px;
 }
 
-/* SMALL SCREEN FORM */
+/* Small Screen Form Section */
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 599px wide */
 
